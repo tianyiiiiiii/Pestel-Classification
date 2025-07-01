@@ -1,0 +1,12 @@
+1. 
+Epochs - 10 
+MAX_LEN = 256 
+BATCH_SIZE = 16
+EPOCHS = 10
+LEARNING_RATE = 1e-7
+results:
+150min
+Epoch 5 - Testing: 100%|██████████| 210/210 [01:45<00:00,  2.00it/s, loss=1.64]
+Epoch: 5, Loss: 1.4435, Accuracy: 0.5723
+
+2. 
