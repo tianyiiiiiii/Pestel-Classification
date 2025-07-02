@@ -1,7 +1,9 @@
+balancednewcategory.csv 
+bertnewscat_v2
 1. 
 EPOCHS = 10
 LEARNING_RATE = 1e-7
-MAX_LEN = 256 
+MAX_LEN = 256 x
 BATCH_SIZE = 16
 results:
 150min
@@ -13,3 +15,52 @@ EPOCHS = 20
 LEARNING_RATE = 1e-5 
 MAX_LEN = 128 
 BATCH_SIZE = 32 
+results: 
+60min
+Epoch 6 - Training: 100%|██████████| 368/368 [11:31<00:00,  1.88s/it, loss=0.0568]
+Epoch 6 - Validation: 100%|██████████| 53/53 [00:23<00:00,  2.26it/s, loss=0.455]
+Epoch 6
+	Train Loss: 0.1452 | Acc: 95.87% | P: 0.9586 | R: 0.9587 | F1: 0.9586
+	Val   Loss: 0.7593 | Acc: 79.11% | P: 0.7927 | R: 0.7911 | F1: 0.7907
+Test Evaluation: 100%|██████████| 105/105 [01:14<00:00,  1.42it/s, loss=0.853]
+Test | Loss: 0.5642 | Acc: 80.83% | P: 0.8086 | R: 0.8083 | F1: 0.8068
+Final Test Accuracy: 80.83% | Test Loss: 0.5642
+
+3. 
+with self.classifier
+EPOCHS = 20
+LEARNING_RATE = 1e-6
+MAX_LEN = 128
+BATCH_SIZE = 32 
+result: 
+80min
+Epoch 6 - Training: 100%|██████████| 368/368 [09:17<00:00,  1.51s/it, loss=0.28] 
+Epoch 6 - Validation: 100%|██████████| 53/53 [00:20<00:00,  2.58it/s, loss=0.434]
+Epoch 6
+	Train Loss: 0.3519 | Acc: 93.40% | P: 0.9340 | R: 0.9340 | F1: 0.9339
+	Val   Loss: 0.6438 | Acc: 79.94% | P: 0.8004 | R: 0.7994 | F1: 0.7991
+Test Evaluation: 100%|██████████| 105/105 [00:39<00:00,  2.66it/s, loss=0.923]
+Test | Loss: 0.6135 | Acc: 80.86% | P: 0.8086 | R: 0.8086 | F1: 0.8082
+Final Test Accuracy: 80.86% | Test Loss: 0.6135
+
+4. 
+added weight_decay = 0.01 to optimizer 
+self.dropout = 0.5
+with self.classifier
+EPOCHS = 20
+LEARNING_RATE = 1e-6
+MAX_LEN = 128
+BATCH_SIZE = 32 
+results: 
+270min
+26 epochs 
+Test Evaluation: 100%|██████████| 105/105 [00:47<00:00,  2.19it/s, loss=0.897]
+Test Loss: 0.6066 | Acc: 80.06% | P: 0.8009 | R: 0.8006 | F1: 0.8005
+Final Test Accuracy: 80.06% | Test Loss: 0.6066
+
+
+increase dataset? 5k -> may be biased though
+combine news dataset -> ? 
+
+
+5. 
