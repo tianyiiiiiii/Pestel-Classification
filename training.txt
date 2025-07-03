@@ -54,6 +54,9 @@ BATCH_SIZE = 32
 results: 
 270min
 26 epochs 
+Epoch 26
+	Train Loss: 0.5260 | Acc: 83.47% | P: 0.8339 | R: 0.8347 | F1: 0.8341
+	Val   Loss: 0.6310 | Acc: 79.52% | P: 0.7946 | R: 0.7952 | F1: 0.7944
 Test Evaluation: 100%|██████████| 105/105 [00:47<00:00,  2.19it/s, loss=0.897]
 Test Loss: 0.6066 | Acc: 80.06% | P: 0.8009 | R: 0.8006 | F1: 0.8005
 Final Test Accuracy: 80.06% | Test Loss: 0.6066
@@ -63,4 +66,8 @@ increase dataset? 5k -> may be biased though
 combine news dataset -> ? 
 
 
-5. 
+5knewcategory.csv 
+bertnewscat_v3
+1. 
+
+
