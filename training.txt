@@ -47,7 +47,7 @@ Final Test Accuracy: 80.86% | Test Loss: 0.6135
 added weight_decay = 0.01 to optimizer 
 self.dropout = 0.5
 with self.classifier
-EPOCHS = 20
+EPOCHS = 30
 LEARNING_RATE = 1e-6
 MAX_LEN = 128
 BATCH_SIZE = 32 
@@ -68,6 +68,24 @@ combine news dataset -> ?
 
 5knewcategory.csv 
 bertnewscat_v3
-1. 
+1. (same parameters as v2 4.)
+weight_decay = 0.01 to optimizer 
+self.dropout = 0.5
+with self.classifier
+EPOCHS = 50
+LEARNING_RATE = 1e-6
+MAX_LEN = 128
+BATCH_SIZE = 32 
+results: 
+558min
+31 epochs 
+Test Evaluation: 100%|██████████| 161/161 [01:03<00:00,  2.54it/s, loss=0.137]
+Test Loss: 0.5910 | Acc: 79.61% | P: 0.7968 | R: 0.8025 | F1: 0.7993
+Final Test Accuracy: 79.61% | Test Loss: 0.5910
 
-
+2. 
+added weight_decay = 0.01 to optimizer 
+EPOCHS = 50
+LEARNING_RATE = 1e-6
+MAX_LEN = 128
+BATCH_SIZE = 32 
