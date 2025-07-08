@@ -3,7 +3,7 @@ bertnewscat_v2
 1. 
 EPOCHS = 10
 LEARNING_RATE = 1e-7
-MAX_LEN = 256 x
+MAX_LEN = 256 
 BATCH_SIZE = 16
 results:
 150min
@@ -67,7 +67,7 @@ combine news dataset -> ?
 
 
 5knewcategory.csv 
-bertnewscat_v3
+bertnewscat_v2
 1. (same parameters as v2 4.)
 weight_decay = 0.01 to optimizer 
 self.dropout = 0.5
@@ -89,3 +89,16 @@ EPOCHS = 50
 LEARNING_RATE = 1e-6
 MAX_LEN = 128
 BATCH_SIZE = 32 
+
+
+100per
+1. 100 datapoints per category
+added weight_decay = 0.01 to optimizer 
+EPOCHS = 400
+LEARNING_RATE = 1e-6
+MAX_LEN = 128
+BATCH_SIZE = 32 
+
+
+mnds -> 400per 
+1. 
