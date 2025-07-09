@@ -65,7 +65,7 @@ Final Test Accuracy: 80.06% | Test Loss: 0.6066
 increase dataset? 5k -> may be biased though
 combine news dataset -> ? 
 
-
+________________________________________________________________________________________
 5knewcategory.csv 
 bertnewscat_v2
 1. (same parameters as v2 4.)
@@ -90,7 +90,7 @@ LEARNING_RATE = 1e-6
 MAX_LEN = 128
 BATCH_SIZE = 32 
 
-
+________________________________________________________________________________________
 100per
 1. 100 datapoints per category
 added weight_decay = 0.01 to optimizer 
@@ -98,7 +98,37 @@ EPOCHS = 400
 LEARNING_RATE = 1e-6
 MAX_LEN = 128
 BATCH_SIZE = 32 
+Results: 
+151 epochs 
+60min
+Test Evaluation: 100%|██████████| 4/4 [00:01<00:00,  2.50it/s, loss=0.783]
+Test Loss: 0.8558 | Acc: 73.33% | P: 0.7365 | R: 0.7333 | F1: 0.7321
+Final Test Accuracy: 73.33% | Test Loss: 0.8558
 
+________________________________________________________________________________________
+mnds, 400per 
+1. -> too heavy -> 36gb swap
+EPOCHS = 20
+LEARNING_RATE = 5e-5
+MAX_LEN = 512
+BATCH_SIZE = 32 
+Results: 
+Test Evaluation: 100%|██████████| 15/15 [00:43<00:00,  2.89s/it, loss=0.371]
+Test Loss: 0.4124 | Acc: 88.33% | P: 0.8864 | R: 0.8833 | F1: 0.8834
+Final Test Accuracy: 88.33% | Test Loss: 0.4124
 
-mnds -> 400per 
-1. 
+2. 
+EPOCHS = 100
+LEARNING_RATE = 5e-6
+MAX_LEN = 512 
+BATCH_SIZE = 16
+Results: 
+Test Evaluation: 100%|██████████| 30/30 [00:39<00:00,  1.30s/it, loss=0.0704]
+Test Loss: 0.5206 | Acc: 85.83% | P: 0.8646 | R: 0.8583 | F1: 0.8583
+Final Test Accuracy: 85.83% | Test Loss: 0.5206
+
+3. 
+EPOCHS = 100
+LEARNING_RATE = 5e-6
+MAX_LEN = 512
+BATCH_SIZE = 32 
